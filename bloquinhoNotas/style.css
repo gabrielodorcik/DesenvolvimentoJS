@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(101, 98, 194);
+    text-align: center;
+    
+}
+input{
+    font-size: 20px;
+    margin-top: 1000;
+    height: 50px;
+	width: 600px;
+    border-radius: 0%;
+
+}
+button{
+    font-size: 20px;
+    background: #0066A2;
+	color: white;
+	border-radius: 30%;
+	border-color: #0066A2;
+	height: 55px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+}
+div{
+    text-align: center;
+    margin-top:100px;
+}
+
