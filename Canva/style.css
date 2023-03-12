@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      /*border sizing inclui width ou height + padding + border a um elemento
+      */
+}
+
+body {
+    background-color: teal;
+      /*no comments*/
+}
+
+main {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      /*height é altura de um elemento, geralmente um campo, tabala, imagem, etc
+      flex-direction O eixo principal do flex container é o mesmo que o eixo do bloco. Os pontos de início e fim principais 
+      são os mesmos que os pontos antes e depois do modo de escrita.
+      justify content define como o navegador vai distribuir o espaço entre e ao redor dos itens
+      */
+}
+
+canvas {
+    background-color: #fcfcfc;
+    cursor: crosshair;
+    margin: 20px auto;
+    border-color: black;
+    border-radius: 5px;
+      /*cursor, define como o cursor do mouse vai ser definido, quando ele passar em cima de um elemento
+      margin é a margem de um elemento
+      border radius é a porcentagem da borda, usado para geralmente, deixar um elemento arredendado
+      */
+}
+
+.buttons{
+    display: flex;
+    padding: 10px;
+    background-color: darkslategray;
+    border-radius: 5px;
+      /*no comments*/
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+      /*border é a borda de um elemento
+      */
+}
+
+.clear {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin-left: 10px;
+      /*margin left, é a margem a esquerda de um elemento
+      */
+}
