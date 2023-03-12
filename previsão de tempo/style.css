@@ -1,0 +1,51 @@
+body {
+    background-color: #f7f7f7;
+    text-align: center;
+    margin-top: 160px;
+
+}
+/*  background-color é para definir a cor do fundo do programa*/
+
+main {
+    width: 100%;
+    padding: 10px;
+    
+}
+/*  width é a largura do elemento que vamos estilizar.
+    padding é definição de um espaço ao redor do elemento, dentro de margens e bordas. Sendo para a
+    direita, esquerda, top ou bottom. quando definimos apenas um valor, ele caberá as 4 posições.*/
+
+header {
+    
+    align-items: center;
+    gap: 5px;
+
+}
+/*  display flex, é usado para que o filho de um container flexivel pode ser usado para usado para preencher
+ um espaço não utilizado ou encolher, ajudando a manipulação deste elemento. 
+    align-itens é usado para direcionar um elemento, no centro, a esquerda, a direita ou justificado.
+    gap deifine lacunas entre linhas e colunas.*/
+
+input {
+    padding: 5px;
+    outline: none;
+
+}
+/*  outline é uma linha que é desenhada ao redor dos elementos.*/
+
+button {
+    min-width: 120px;
+    margin-top: 10px;
+    background-image: radial-gradiant(#b5b5b5, #f7f7f7 70%);
+
+}
+/*  min-width seta o menor valor de largura de um elemento.
+    margin-top é uma margem que é definida apartir do topo da tela.
+    background-imag é uma imagem que colocamos ao fundo de um elemento*/
+
+.content {
+    margin-top: 10px;
+    word-break: break-all;
+
+}
+/*  word-break é usado para sempre que uma palavra transpaçar uma caixa de texto, uma quebra de linha.*/

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Utilizando o ! + enter, automaticamente é criado esse template pronto. Com alguns meta já predefinidos.-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Previsão de Tempo</title><!--Titulo do programa, vai aparecer lá no navegador-->
+        <link rel="stylesheet" href="style.css" type="text/css"><!--Linkando o arquivo CSS com o HTML, mesmo que import-->
+    </head>
+    <!--Corpo do programa, como vamos utilizar JS junto,o HTML se torna mais enxuto que o convencional-->
+    <body>
+        <h1>Aplicativo de Previsão de Tempo</h1>
+        <!--criando uma div principal -->
+        <main>
+
+            <header><!--elemnto, que vai receber o campo e o botão-->
+
+                <input type="text" /><!-- input, campo onde o usuário insere algo-->
+                <button type="submit"> Pesquisar </button><!--botão, geralmente serve para fazer algo funcionar, ou envirar, etc-->
+
+            </header>
+
+            <div class="content" style="display: none;"> <!--outra div, div são divisória dentro do programa. Display none é para não aparecer se não houver resultado-->
+                
+                <section><!--seção, dentro da div, que conterá a cidade e graus-->
+
+                    <h2 id="city"></h2><!--subtitulo-->
+                    <span id="degree"></span>
+
+                </section>
+
+                <img src="" alt="clima"><!--declaração de imagem-->
+
+            </div>
+
+        </main>
+
+        <script src="script.js"></script><!--fazendo a importação do arquivo JS-->
+        
+    </body>
+
+</html>
