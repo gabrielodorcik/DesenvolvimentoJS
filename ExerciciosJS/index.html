@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicios Javascript</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+
+    <body>
+        <!-- Exercicio de um simples botão com um alerta sobre o onclick. 
+        Lembrar de ativar o CSS antes de usar!
+        <h1>Interagindo com um botão</h1>
+        <button onclick="clicou()">Clique aqui!</button>
+        <script>
+
+            function clicou() {
+                alert("Você clicou em mim!");
+            }
+
+        </script>
+        -->
+        <!-- Exercicio de coletar o nome e inserir o nome em um alert
+        Não esquecer de ativar o CSS!
+        <h1>Trabalhando com dados</h1>
+        <button onclick="inicio()">Clique aqui!</button>
+        <script>
+
+            function inicio() {
+                let nome = window.prompt("Qual é o seu nome?")
+                window.alert(`Olá, ${nome}, ! Seja bem-vindo(a)!`)
+            }
+
+        </script>
+        -->
+        <!-- Exercicio de coletar o nome, e imprimr o resultado na tela.
+        não esquecer de ativar o CSS!
+        <h1>Trabalhando com dados </h1>
+        <button onclick="inicio()">Clique para iniciar</button>
+        <section id="resultado">
+            <p>O resultado é aqui!</p>
+        </section>
+        <script>
+
+            function inicio() {
+                let nome = window.prompt("Qual é o seu nome?")
+                let result = window.document.getElementById('resultado')
+                result.innerHTML = `<p>Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! &#x1F596;`
+            }
+
+        </script>
+        -->
+        <!-- Exercicio que pega um numero e mostra no corpo HTML, ao quadrado e metade.
+        Lembre de ativar o CSS.
+        <h1>Trabalhando com numeros</h1>
+        <button onclick="calcular()">Clique aqui para calcular!</button>
+        <section id="result">
+            <p>O resultado é aqui!</p>
+        </section>
+        <script>
+
+            window.alert("Seja Bem-Vindo(a) ao meu site!")
+            function calcular(){
+                let n1 = Number(window.prompt("Digite um numero: "))
+                let result = document.querySelector("section#result")
+
+                result.innerHTML = `<p> O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}!</p>`
+            }
+        </script>
+        -->
+        <!-- Exercicio de somar dois numeros e imprimir na tela-->
+        <h1>Somando dois numeros</h1>
+        <button onclick="somar()">Somar</button>
+        <section id="result">
+            <p>A soma vai aparecer aqui!</p>
+        </section>
+        <script>
+
+            function somar() {
+                let n1 = Number(window.prompt("Digite um numero: "))
+                let n2 = Number(window.prompt("Digite outro numero: "))
+                soma = n1 + n2
+                let result = document.querySelector("section#result")
+                
+                result.innerHTML = `<p>A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong>!</p>`
+            }
+
+        </script>
+        
+    </body>
+
+</html>
