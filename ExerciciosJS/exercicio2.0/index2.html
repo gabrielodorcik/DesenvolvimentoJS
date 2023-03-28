@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 2.0 Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Exeercicio de pedir as notas e imprimir a média.
+        <h1>Calculando a Média</h1>
+        <button onclick="media()"></button>
+        <section id="situacao">
+
+            O resultado é aqui
+
+        </section>
+
+        <script>
+
+            function media() {
+                let nome = window.prompt('Qual é o seu nome? ')
+                let n1 = Number(window.prompt(`Qual foi a maior nota de ${nome} ?`))
+                let n2 = Number(window.prompt(`Alem de, ${n1}, qual foi a outra nota de ${nome} ?`))
+                med = (n1 + n2) / 2
+
+                let result = document.getElementById('situacao')
+                result.innerHTML = `<p>Calculando a média final de <mark>${nome}</mark>.</p>`
+                result.innerHTML = `<p>As notas obtidas foram <mark>${n1} e ${n2}<mark>. </p>` 
+                result.innerHTML = `<p>A média final será <mark> ${med}</mark>. </p>`
+            }
+
+        </script>
+        --><!-- Exercicio que faz varias operações com a função Math e agora com um function lmpar-->
+        <h1>Executando vários calculos</h1>
+        <button onclick="calcular()">Calcular</button>
+        <button onclick="limpar()" type="reset">Limpar</button>
+        <section id="result">
+            <p>O resultado é aqui</p>
+        </section>
+        <script>
+            function calcular(){
+                let numero = Number(window.prompt("Digite um numero: "))
+
+                let result = document.getElementById('result')
+                result.innerHTML += `<p> O numero que você digitou foi <strong> ${numero} </strong>.</p>`
+                result.innerHTML += `<p> O seu valor absoluto é ${Math.abs(numero)}</p> `
+                result.innerHTML += `<p> A sua parte inteira é ${Math.trunc(numero)}.</p>`
+                result.innerHTML += `<p> O valor inteiro mais próximo é ${Math.round(numero)}.</p>`
+                result.innerHTML += `<p> A raiz quadrada do numero é ${Math.sqrt(numero)}.</p>`
+                result.innerHTML += `<p> A raiz cubica do numero é ${Math.cbrt(numero)}.</p>`
+                result.innerHTML += `<p> O valor de ${numero} <sup>2</sup> é ${Math.pow(numero, 2)}.</p>`
+                result.innerHTML += `<p> O valor de ${numero} <sup>3</sup> é ${Math.pow(numero, 3)}.</p>`
+            }
+            function limpar(){
+
+                let limpar = document.getElementById('result')
+                limpar.innerHTML = '<p>  </p>'
+            }
+
+        </script>
+        
+</body>
+</html>
