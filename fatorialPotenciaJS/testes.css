@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body{
+    align-content: center;
+    justify-items: auto;
+    background-color: aquamarine;
+    display:grid;
+    justify-content: center;
+    
+}
+
+.potencia{
+    align-items: center;
+    display:list-item;
+    justify-content: center;
+    display: grid;
+    padding: 40px;
+    border: 4px solid black;
+    margin-block-end: 30px;
+    margin-top: 100px;
+    
+}
+
+.fatorial{
+    align-items: center;
+    display:list-item;
+    justify-content: center;
+    display: grid;
+    padding: 40px;
+    border: 4px solid black;
+}
