@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercicios Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <h1>Lista de Javascript</h1>
+        <p>Gabriel Odorcik e Brian Costa </p>
+        
+    </header>
+
+    <h2>Exercicio 1</h2>
+    <h2>Escreva uma função em JavaScript que realize a conversão de uma temperatura fornecida em graus Fahrenheit (F) para Celsius (C).</h2>
+
+    <button onclick="conversion()">Conversão</button>
+    <section id="conver">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+
+    <div class="conversion">
+        <p>let f = parseFloat(prompt("Digite o valor a ser convertido: "))</p>
+        <p>function conversion() { </p><br>
+        <p style="margin-left:40px;">let c = (f - 32) * 5/9 // ou 0.5556</p>
+        <p style="margin-left:40px;">console.log("O numero convertido para celcius é: " , c)</p>
+        <br>
+        <p>}</p>
+        <p>conversion(f)</p>
+    </div>
+    <br>
+    <h2>Exercicio 2</h2>
+    <h2>Escreva uma função que mostre na tela um número fornecido pelo usuário, porém invertido. 
+    Por exemplo, o usuário fornece o número 875 e a função mostra na tela o número 578.</h2>
+
+    <button onclick="inverso()">Inverso</button>
+    <section id="inv">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+    <div class="inverso">
+        <p>let num = prompt("Digite Um numero maior que 100: ")</p>
+        <p>function inverso(num) { </p><br>
+        <p style="margin-left:40px;">let numInv = 0</p>
+        <p style="margin-left:40px;">while (num != 0) {</p> <br>
+        <p style="margin-left:80px;">numInv = numInv * 10 + (num % 10)</p>
+        <p style="margin-left:80px;">num = parseInt(num / 10)</p> <br>
+        <p style="margin-left:40px;">}</p>
+        <p style="margin-left:40px;">console.log("O numero inverso do numero digitado é: ",numInv)</p>
+        <br>
+        <p>}</p>
+        <p>inverso(num)</p>
+    </div>
+    <br>
+    <h2>Exercicio 3</h2>
+    <h2>Escreva uma função que permita contar o número de vogais contidas em uma string fornecida pelo usuário. 
+    Por exemplo, o usuário informa a string “Beterraba”, e a função retorna o número 4 (há 4 vogais nessa palavra).</h2>
+
+    <button onclick="vogais()">Vogais</button>
+    <section id="vogais">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+    <div class="vogais">
+        <p>let palavra = String(prompt("Digite uma palavra: "))</p>
+        
+        <p>function vogais(palavra) { </p><br>
+        <p style="margin-left:40px;">let i, cont = 0</p>
+        <p style="margin-left:40px;">for (i = 0; i <= palavra.length; i++) {</p> <br>
+        <p style="margin-left:80px;">if (palavra.charAt(i) == "a" || palavra.charAt(i) == "e" || 
+            palavra.charAt(i) == "i" || palavra.charAt(i) == "o" || palavra.charAt(i) == "u") {</p>
+        <p style="margin-left:100px;">cont++</p> <br>
+        <p style="margin-left:80px;">}</p>
+        <p style="margin-left:40px;">}</p>
+        <p style="margin-left:40px;">console.log("A quantidade de vogais é", cont)</p>
+        <br>
+        <p>}</p>
+        <p>vogais(palavra)</p>
+    </div>
+    <br>
+    <h2>Exercicio 4</h2>
+    <h2>Escreva uma função em JavaScript que conte quantas vezes um caractere aparece em uma string. 
+    Tanto o caractere quanto a string devem ser fornecidos pelo usuário</h2>
+
+    <button onclick="buscaCaractere()">Busca caractere</button>
+    <section id="palavra">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+    <div class="palavra">
+        <p>let palavra = String(prompt("Digite uma palavra: "))</p>
+        <p>let letra = prompt("Qual a letra a ser buscada? ")</p>
+        <p>function buscaCaractere(palavra) { </p><br>
+        <p style="margin-left:40px;">let i, cont = 0</p>
+        <p style="margin-left:40px;">for (i = 0; i <= palavra.length; i++) {</p> <br>
+        <p style="margin-left:80px;">if (palavra.charAt(i) == letra) {</p>
+        <p style="margin-left:100px;">cont++</p> <br>
+        <p style="margin-left:80px;">}</p>
+        <p style="margin-left:40px;">}</p>
+        <p style="margin-left:40px;">console.log("A quantidade de letras é de:", cont)</p>
+        <br>
+        <p>}</p>
+        <p>buscaCaractere(palavra)</p>
+    </div>
+    <br>
+    <h2>Exercicio 4</h2>
+    <h2>Escreva uma função em JavaScript que conte quantas vezes um caractere aparece em uma string. 
+    Tanto o caractere quanto a string devem ser fornecidos pelo usuário</h2>
+
+    <button onclick="buscaCaractere()">Busca caractere</button>
+    <section id="palavra">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+    <div class="palavra">
+        <p>let palavra = String(prompt("Digite uma palavra: "))</p>
+        <p>let letra = prompt("Qual a letra a ser buscada? ")</p>
+        <p>function buscaCaractere(palavra) { </p><br>
+        <p style="margin-left:40px;">let i, cont = 0</p>
+        <p style="margin-left:40px;">for (i = 0; i <= palavra.length; i++) {</p> <br>
+        <p style="margin-left:80px;">if (palavra.charAt(i) == letra) {</p>
+        <p style="margin-left:100px;">cont++</p> <br>
+        <p style="margin-left:80px;">}</p>
+        <p style="margin-left:40px;">}</p>
+        <p style="margin-left:40px;">console.log("A quantidade de letras é de:", cont)</p>
+        <br>
+        <p>}</p>
+        <p>buscaCaractere(palavra)</p>
+    </div>
+    <br>
+    <h2>Exercicio 5</h2>
+    <h2>Escreva uma função que verifica se um número fornecido pelo usuário em um prompt é primo ou não.</h2>
+
+    <button onclick="primo()">Primo</button>
+    <section id="primo">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+    <div class="primo">
+        <p>let num = prompt("Digite um numero:  ")</p>
+        
+        <p>function primo(num) { </p><br>
+        <p style="margin-left:40px;">let i, div = 0, ePrimo, naoPrimo</p>
+        <p style="margin-left:40px;">for (i = 0; i <= num; i++) {</p> <br>
+        <p style="margin-left:80px;">if (num % i == 0) {</p>
+        <p style="margin-left:100px;">div++</p> <br>
+        <p style="margin-left:40px;">if (div == 2) {</p> <br>
+        <p style="margin-left:80px;">ePrimo = "É primo"</p>
+        <p style="margin-left:80px;">console.log("é primo")</p>
+        <p style="margin-left:40px;">} else {</p> <br>
+        <p style="margin-left:80px;">naoPrimo = "Não é primo"</p>
+        <p style="margin-left:80px;">console.log("não é primo")</p>  
+        <p style="margin-left:40px;">}</p>
+        <p style="margin-left:40px;">}</p>
+        <p style="margin-left:40px;">}</p>
+        <br>
+        <p>}</p>
+        <p>primo(num)</p>
+    </div>
+    <br>
+    <h2>Exercicio 6</h2>
+    <h2>Calcular a soma dos números impares maiores que 10 menores que 30</h2>
+
+    <button onclick="somaI()">Impar</button>
+    <section id="impar">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+    <div class="impar">
+        
+        <p>function somaImpar() { </p><br>
+        <p style="margin-left:40px;">let i, somaImpar = 0</p>
+        <p style="margin-left:40px;">for (i = 11; i <= 30; i++) {</p> <br>
+        <p style="margin-left:80px;">if (i % 2 == 1) {</p>
+        <p style="margin-left:100px;">somaImpar += i</p> <br>
+        <p style="margin-left:80px;">}</p> <br>
+        <p style="margin-left:40px;">}</p>
+        <p style="margin-left:40px;">console.log(somaImpar)</p>  
+        
+        <br>
+        <p>}</p>
+        <p>somaImpar()</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
