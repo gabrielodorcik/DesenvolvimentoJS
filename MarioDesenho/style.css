@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(24, 212, 212);
+}
+.w, .r, .b, .o, .y {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+}
+.r{
+    background-color: #FB0405;
+}
+.b{
+    background-color: #7D5307;
+}
+.o{
+    background-color: #FF9F10;
+}
+.y{
+    background-color: #F6A412;
+}
+
+.bowser .w, .r, .b, .o, .y {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -6px;
+}
+.bowser .r{
+    background-color: #2d0494;
+}
+.b{
+    background-color: #7D5307;
+}
+.bowser .o{
+    background-color: #d9d4cd;
+}
+.y{
+    background-color: #F6A412;
+}
+
+.ceu{
+    background-color: rgb(24, 212, 212);
+    width: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.grama{
+    width: auto;
+    height: 30px;
+    background-color: green;
+    margin-top: -10;
+}
+.chao{
+    background-color: rgb(90, 32, 3);
+    width: auto;
+    height: 300px;
+}
+.nuvem{
+    width: 140px;
+    height: 80px;
+    background-color: white;
+    border-radius: 30px;
+    border: 4px solid rgb(166, 161, 161);
+    align-items: center;
+    display: flex;
+
+
+}
+.personagens{
+    display: flex;
+    justify-content: space-between;
+}
+
