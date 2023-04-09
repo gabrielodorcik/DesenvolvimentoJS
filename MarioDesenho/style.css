@@ -20,6 +20,7 @@ body{
     background-color: #F6A412;
 }
 
+
 .bowser .w, .r, .b, .o, .y {
     display: inline-block;
     width: 20px;
@@ -27,17 +28,18 @@ body{
     margin-top: -6px;
 }
 .bowser .r{
-    background-color: #2d0494;
+    background-color: #e9e5f0;
 }
-.b{
-    background-color: #7D5307;
+.bowser .b{
+    background-color: #a7761b;
 }
 .bowser .o{
-    background-color: #d9d4cd;
+    background-color: #47e312;
 }
-.y{
-    background-color: #F6A412;
+.bowser .y{
+    background-color: #0a0908;
 }
+
 
 .ceu{
     background-color: rgb(24, 212, 212);
@@ -50,7 +52,7 @@ body{
     width: auto;
     height: 30px;
     background-color: green;
-    margin-top: -10;
+    padding-top: -10px;
 }
 .chao{
     background-color: rgb(90, 32, 3);
@@ -71,5 +73,7 @@ body{
 .personagens{
     display: flex;
     justify-content: space-between;
+    align-items: last baseline;
+    
 }
 
