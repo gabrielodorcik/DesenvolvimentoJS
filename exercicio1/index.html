@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="stye.css">
+</head>
+<body>
+    <header>
+
+        <h1>Lista de Javascript</h1>
+        <p>Gabriel Odorcik e Brian Costa </p>
+        
+    </header>
+
+    <h2>Exercicio 1</h2>
+    <h2>Receba um  salário de um colaborador e calcule reajuste segundo o seguinte critério, baseado no salário atual</h2>
+
+    <button onclick="salario()">Salário</button>
+    <section id="salar">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+
+    <div class="salario">
+       <p></p> 
+       <p>let salario = parseFloat(prompt("Digite seu salário: "))</p>
+       <p>let aux = salario;</p><br>
+       <p>console.log(`Seu salário inicial é de: R$${salario}`);</p><br>
+       <p style="margin-left:40px;">if(salario <= 280)</p>
+       <p style="margin-left:80px;">salario += salario * 0.2;</p>
+       <p style="margin-left:40px;">else if(salario > 280 && salario <= 700)</p>
+       <p style="margin-left:80px;">salario += salario * 0.15;</p>
+       <p style="margin-left:40px;">else if(salario > 700 && salario <= 1500)</p>
+       <p style="margin-left:80px;">salario += salario * 0.1;</p>
+       <p style="margin-left:40px;">else</p>
+       <p style="margin-left:80px;">salario += salario * 0.05;</p>
+       <br>
+       <p>console.log(`O percentual de aumento aplicado foi de: ${((salario - aux) / aux) * 100}%`);</p>
+       <p>console.log(`Seu salário aumentou em: R$${salario - aux}`);</p>
+       <p>console.log(`Seu salário após o reajuste é de: R$${salario}`);</p>
+    </div>
+    <br>
+    <h2>Exercicio 2</h2>
+    <h2>Receba uma data no formato “dd/mm/aaaa” e escreva a data por extenso. </h2>
+
+    <button onclick="salario()">Salário</button>
+    <section id="salar">
+        <p>Resultado aparece aqui!</p> <br>
+    </section>
+
+    <h3>Resolução do Código Usado:</h3>
+
+    <div class="salario">
+       <p></p> 
+       <p>let salario = parseFloat(prompt("Digite seu salário: "))</p>
+       <p>let aux = salario;</p><br>
+       <p>console.log(`Seu salário inicial é de: R$${salario}`);</p><br>
+       <p style="margin-left:40px;">if(salario <= 280)</p>
+       <p style="margin-left:80px;">salario += salario * 0.2;</p>
+       <p style="margin-left:40px;">else if(salario > 280 && salario <= 700)</p>
+       <p style="margin-left:80px;">salario += salario * 0.15;</p>
+       <p style="margin-left:40px;">else if(salario > 700 && salario <= 1500)</p>
+       <p style="margin-left:80px;">salario += salario * 0.1;</p>
+       <p style="margin-left:40px;">else</p>
+       <p style="margin-left:80px;">salario += salario * 0.05;</p>
+       <br>
+       <p>console.log(`O percentual de aumento aplicado foi de: ${((salario - aux) / aux) * 100}%`);</p>
+       <p>console.log(`Seu salário aumentou em: R$${salario - aux}`);</p>
+       <p>console.log(`Seu salário após o reajuste é de: R$${salario}`);</p>
+    </div>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
