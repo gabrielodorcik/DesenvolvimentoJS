@@ -1,0 +1,96 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Calculadora de Juros Compostos JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<script src="script.js"></script>
+        
+    <h1>Calculadora de Juros compostos</h1>
+
+    <div class="container">
+        <form class="w-100" method="post" id="formCalc" action="">
+            <label for="basic-url">Investimento Inicial</label>
+            <div class="input-group mb-3 rounded-0">
+                <div class="input-group-prepend">
+                    <span class="input-group-text rounded-0 bg-warning"><strong>R$</strong></span>
+                </div>
+                <input class="form-control border border-warning border-top-0 border-right-0 border-left-0" type="number" step="0.01" id="investimento_inicial" min="0.00" max="9999999999.00" required>
+            </div>
+            <label for="basic-url">Investimento Mensal</label>
+            <div class="input-group mb-3 rounded-0">
+                <div class="input-group-prepend">
+                    <span class="input-group-text rounded-0 bg-warning"><strong>R$</strong></span>
+                </div>
+                <input class="form-control currency border border-warning border-top-0 border-right-0 border-left-0" type="number" step="0.01" id="investimento_mensal" min="0.00" max="9999999999.00" required>
+            </div>
+            <label for="basic-url">Por quanto tempo?</label>
+            <div class="input-group mb-3 rounded-0">
+                <div class="input-group-prepend">
+                    <span class="input-group-text rounded-0 bg-warning"><strong>&#x1F550</strong></span>
+                </div>
+                <input class="form-control currency border border-warning border-top-0 border-right-0 border-left-0" type="number" id="meses" min="1" placeholder="Meses" required>
+            </div>
+            <label for="basic-url">Juros ao Mês</label>
+            <div class="input-group mb-3 rounded-0">
+                <input class="form-control currency border border-warning border-top-0 border-right-0 border-left-0" type="number" step="0.01" id="taxa_de_juros" min="0.01" max="9999999999.00" required>
+                <div class="input-group-prepend">
+                    <span class="input-group-text rounded-0 bg-warning"><strong>%</strong></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-warning" type="click" value="Calcular" onclick="return calcular_juros_compostos()">Calcular</button>
+            </div>
+        </form>
+
+        <div class="row d-flex justify-content-center">
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Investimento Inicial</h5>
+                    <p class="card-text" id="inicial"><strong>R$</strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Investimento Mensal</h5>
+                    <p class="card-text" id="mensal"><strong>R$</strong><br><small id="juros"></small></p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Tempo do Investimento</h5>
+                    <p class="card-text" id="duracao"><strong>meses</strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Total do Investimento</h5>
+                    <p class="card-text" id="tt_investimento"><strong>R$</strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Juros Recebidos</h5>
+                    <p class="card-text" id="juros_recebidos"><strong>R$</strong></p>
+                </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Valor a Receber c/ Juros</h5>
+                    <p class="card-text" id="a_receber"><strong>R$</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
