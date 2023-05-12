@@ -1,0 +1,44 @@
+let checkLinha1, checkLinha2, checkLinha3;
+let linha1, linha2, linha3;
+console.log("Jogo da Velha! ");
+
+for (let i = 0; i <= 2; i++){
+  let vetLinha1 = prompt(`Digite X ou O da primeira linha pos ${i} `);
+  if(vetLinha1[i] == 'x'){
+    checkLinha1 = 1;
+  }else if(vetLinha1[i] == 'o'){
+    checkLinha1 = 0;
+  }
+  linha1 = vetlinha1[i];
+}
+
+for (let i = 0; i <= 2; i++ ){
+  let vetLinha2 = prompt(`Digite X ou O da segunda linha pos ${i} `);
+  if(vetLinha2[i] == 'x'){
+    console.log(vetLinha2[i]);
+    checkLinha2 = 1;
+  }else if(vetLinha2[i] == 'o'){
+    checkLinha2 = 0;
+  }
+}
+
+for (let i = 0; i <= 2; i++) {
+  let vetLinha3 = prompt(`Digite X ou O da terceira linha pos ${i}`);
+  if(vetLinha3[i] == 'x'){
+    console.log(vetLinha3[i]);
+    checkLinha3 = 1;
+  }else if(vetLinha3[i] == 'o'){
+    checkLinha3 = 0;
+  }
+}
+
+for(let i = 0; i < 2; i++)
+  console.log(linha1[i]);
+
+if(checkLinha1 && checkLinha2 && checkLinha3 == 1){
+ console.log("O x venceu!");
+}else if(checkLinha1 && checkLinha2 && checkLinha3 == 0){
+  console.log("O o venceu!");
+}else {
+  console.log("Empate!");
+}
